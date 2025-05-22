@@ -82,19 +82,6 @@ Make sure `lush.nvim` is installed (it will be automatically pulled if you're us
 
 ---
 
-## 📂 File Structure
-
-```bash
-tinta.nvim/
-├── colors/
-│   └── tinta.lua          # Entry point for the theme
-├── lua/tinta/
-│   ├── init.lua           # Theme loader and logic
-│   └── highlights.lua     # Theme definitions using lush
-```
-
----
-
 ## 📸 Screenshots
 
 
