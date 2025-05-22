@@ -1,5 +1,3 @@
-local M = {}
-
 local lush = require("lush")
 local hsl = lush.hsl
 
@@ -114,7 +112,7 @@ t.grey40 = t.shade40.mix(t.primary, 12)
 t.white = hsl("#ffffff")
 t.green = hsl("#008200")
 
-M.theme = function(injected_functions)
+local theme = lush(function(injected_functions)
 	local sym = injected_functions.sym
 
 	return {
@@ -1211,6 +1209,5 @@ M.theme = function(injected_functions)
 		markdownH2({ fg = t.keyword }),
 		markdownH1({ fg = t.keyword }),
 	}
-end
-
-return M
+end)
+return theme
