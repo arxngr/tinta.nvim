@@ -1,6 +1,3 @@
-local tinta = require("tinta")
-
-tinta.config.style = "dark"
-vim.o.background = "dark"
+local tinta = require("tinta.tinta")
 
 tinta.load()

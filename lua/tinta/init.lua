@@ -4,7 +4,6 @@ local M = {}
 local isGui = vim.fn.has("gui_running") == 1
 
 local defaultConfig = {
-	style = "dark",
 	transparent = false,
 	terminal = isGui,
 	guicursor = true,
