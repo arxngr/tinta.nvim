@@ -1,6 +1,5 @@
-local M = {}
-
 local lush = require("lush")
+local M = {}
 
 local isGui = vim.fn.has("gui_running") == 1
 
