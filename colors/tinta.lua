@@ -1,3 +1,2 @@
-local tinta = require("tinta.tinta")
-
+local tinta = require("tinta.init")
 tinta.load()
