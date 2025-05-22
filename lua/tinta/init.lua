@@ -23,9 +23,9 @@ function M.setup(options)
 end
 
 function M.load()
-	local theme = require("highlights.tinta")
+	local theme = require("hightlights.tinta")
 	vim.g.colors_name = "tinta"
-	package.loaded["highlights.tinta"] = nil
+	package.loaded["hightlights.tinta"] = nil
 
 	-- transparent
 	if M.config.transparent == true and not isGui then
