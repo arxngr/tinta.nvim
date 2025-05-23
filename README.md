@@ -30,7 +30,7 @@
 
 ```lua
 {
-  "ardi-nugraha/tinta.nvim",
+  "arxngr/tinta.nvim",
   lazy = false,
   priority = 1000,
   config = function()
@@ -47,7 +47,7 @@
 
 ```lua
 use({
-  "ardi-nugraha/tinta.nvim",
+  "arxngr/tinta.nvim",
   config = function()
     require("tinta").setup({
       transparent = false,
