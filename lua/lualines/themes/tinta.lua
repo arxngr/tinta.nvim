@@ -1,6 +1,6 @@
 local pallete = {
 	bg = "#0f1013",
-	fg = "#0f1013",
+	fg = "#ABB2BF",
 	normalFG = "#abb2bf",
 	green = "#3FC56B",
 	red = "#FF6480",
