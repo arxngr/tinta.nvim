@@ -387,7 +387,7 @@ local theme = lush(function(injected_functions)
 		sym("@lsp.typemod.variable.constant")({ sym("@constant") }),
 		sym("@lsp.typemod.function.declaration")({ sym("@function") }),
 		sym("@lsp.typemod.function.readonly")({ sym("@function") }),
-		sym("LspInlayHint")({ bg = t.shade2, fg = t.shade25 }),
+		sym("LspInlayHint")({ bg = t.shade2, fg = t.comment }),
 
 		-- gui vim
 		-- VimR
