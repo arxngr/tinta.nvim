@@ -1231,6 +1231,8 @@ local theme = lush(function(injected_functions)
         DapUIWatchesEmpty = { bg = t.property, fg = t.bg },
         DapUIWatchesValue = { fg = t.property },
         DapUIWatchesError = { fg = t.property },
+        debugPC = { fg = t.fg, bg = t.keyword },
+
     }
 end)
 return theme
