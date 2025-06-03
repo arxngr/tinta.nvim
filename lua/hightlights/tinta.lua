@@ -117,7 +117,7 @@ local theme = lush(function(injected_functions)
 
     return {
         Normal({ fg = t.fg, bg = t.bg }), -- normal text
-        CursorLine({ bg = t.grey7 }),     -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+        CursorLine({ bg = t.keyword }),   -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
         CursorColumn({ CursorLine }),     -- Screen-column at the cursor, when 'cursorcolumn' is set.
         Whitespace({ fg = t.grey10 }),
         Comment({ fg = t.comment }),
