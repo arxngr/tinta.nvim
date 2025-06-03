@@ -812,9 +812,9 @@ local theme = lush(function(injected_functions)
 		MasonHighlightBlockSecondary({ bg = t.constant, fg = t.bg }),
 		MasonHighlightBlockBoldSecondary({ bg = t.constant, fg = t.bg, gui = "bold" }),
 		MasonLink({ sym("@text.uri") }),
-		MasonMuted({ fg = t.shade50 }),
-		MasonMutedBlock({ bg = t.shade40, fg = t.bg }),
-		MasonMutedBlockBold({ bg = t.shade40, fg = t.bg, gui = "bold" }),
+		MasonMuted({ fg = t.comment }),
+		MasonMutedBlock({ bg = t.shade40, fg = t.comment }),
+		MasonMutedBlockBold({ bg = t.shade40, fg = t.comment, gui = "bold" }),
 		MasonError({ Error }),
 		MasonHeading({ gui = "bold,underline", fg = t.fg }),
 		--
