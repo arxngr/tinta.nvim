@@ -124,7 +124,7 @@ local theme = lush(function(injected_functions)
 		LineNr({ fg = t.comment }), -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 		CursorLineNr({ fg = t.keyword }), -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 		Search({ bg = t.search }),
-		IncSearch({ bg = t.cursor.mix(t.bg, 10), fg = t.bg }),
+		IncSearch({ bg = t.cursor.mix(t.bg, 10), fg = t.property }),
 		CurSearch({ Search }),
 		NormalFloat({ bg = t.bgFloat, blend = 5 }), -- Normal text in floating windows.
 		FloatBorder({ fg = t.punctuation }),
@@ -391,8 +391,8 @@ local theme = lush(function(injected_functions)
 
 		-- gui vim
 		-- VimR
-		VimrDefaultCursor({ fg = t.keyword, bg = t.keyword }),
-		VimrInsertCursor({ fg = t.keyword, bg = t.keyword }),
+		VimrDefaultCursor({ fg = t.keyword, bg = t.bg }),
+		VimrInsertCursor({ fg = t.keyword, bg = t.bg }),
 		--  gitsigns
 		GitSignsAdd({ fg = t.added }),
 		GitSignsChange({ fg = t.changed }),
@@ -803,11 +803,11 @@ local theme = lush(function(injected_functions)
 
 		-- mason
 		MasonNormal({ NormalFloat }),
-		MasonHeader({ bg = t.primary, fg = t.comment }),
+		MasonHeader({ bg = t.primary, fg = t.bgFloat }),
 		MasonHeaderSecondary({ bg = t.constant, fg = t.comment }),
 		MasonHighlight({ fg = t.primary }),
 		MasonHighlightBlock({ bg = t.primary, fg = t.comment }),
-		MasonHighlightBlockBold({ bg = t.primary, fg = t.comment, gui = "bold" }),
+		MasonHighlightBlockBold({ bg = t.primary, fg = t.bgFloat, gui = "bold" }),
 		MasonHighlightSecondary({ fg = t.constant }),
 		MasonHighlightBlockSecondary({ bg = t.constant, fg = t.comment }),
 		MasonHighlightBlockBoldSecondary({ bg = t.constant, fg = t.comment, gui = "bold" }),
