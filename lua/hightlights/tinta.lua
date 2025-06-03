@@ -1232,6 +1232,37 @@ local theme = lush(function(injected_functions)
 		DapUIWatchesValue = { fg = t.property },
 		DapUIWatchesError = { fg = t.property },
 		debugPC = { fg = t.fg, bg = t.cursor },
+
+		NavicText({ fg = hsl(220, 40, 75) }), -- light grayish blue
+		NavicSeparator({ fg = hsl(220, 20, 50) }), -- darker gray
+
+		-- Icon highlights (adjust per preference)
+		NavicIconsFile({ fg = hsl(30, 70, 60) }),
+		NavicIconsModule({ fg = hsl(200, 80, 70) }),
+		NavicIconsNamespace({ fg = hsl(160, 70, 70) }),
+		NavicIconsPackage({ fg = hsl(290, 60, 65) }),
+		NavicIconsClass({ fg = hsl(35, 85, 65) }),
+		NavicIconsMethod({ fg = hsl(200, 90, 70) }),
+		NavicIconsFunction({ fg = hsl(220, 100, 75) }),
+		NavicIconsProperty({ fg = hsl(140, 60, 70) }),
+		NavicIconsField({ fg = hsl(20, 70, 70) }),
+		NavicIconsConstructor({ fg = hsl(330, 80, 70) }),
+		NavicIconsEnum({ fg = hsl(40, 85, 60) }),
+		NavicIconsInterface({ fg = hsl(100, 80, 65) }),
+		NavicIconsVariable({ fg = hsl(260, 70, 75) }),
+		NavicIconsConstant({ fg = hsl(0, 75, 65) }),
+		NavicIconsString({ fg = hsl(120, 50, 60) }),
+		NavicIconsNumber({ fg = hsl(280, 70, 60) }),
+		NavicIconsBoolean({ fg = hsl(350, 60, 60) }),
+		NavicIconsArray({ fg = hsl(180, 70, 65) }),
+		NavicIconsObject({ fg = hsl(60, 75, 65) }),
+		NavicIconsKey({ fg = hsl(210, 60, 60) }),
+		NavicIconsNull({ fg = hsl(0, 0, 50) }),
+		NavicIconsEnumMember({ fg = hsl(30, 70, 60) }),
+		NavicIconsStruct({ fg = hsl(50, 80, 65) }),
+		NavicIconsEvent({ fg = hsl(10, 80, 65) }),
+		NavicIconsOperator({ fg = hsl(330, 60, 60) }),
+		NavicIconsTypeParameter({ fg = hsl(290, 70, 70) }),
 	}
 end)
 return theme
