@@ -3,8 +3,8 @@ local hsl = lush.hsl
 
 local pallete = {
 	-- syntax
-	bg = hsl("#0f1013"),
-	bgFloat = hsl("#0f1013"),
+	bg = hsl("#1f2329"),
+	bgFloat = hsl("#1f2329"),
 	fg = hsl("#ABB2BF"),
 	cursor = hsl("#072952"),
 	keyword = hsl("#10B1FE"),
@@ -12,12 +12,12 @@ local pallete = {
 	punctuation = hsl("#10B1FE"),
 	method = hsl("#3FC56B"),
 	type = hsl("#10B1FE"),
-	string = hsl("#F9C859"),
+	string = hsl("#56b6c2"),
 	number = hsl("#FF78F8"),
 	constant = hsl("#9F7EFE"),
 	tag = hsl("#3691FF"),
 	attribute = hsl("#10B1FE"),
-	property = hsl("#f0c6c6"),
+	property = hsl("#e1bef7"),
 	parameter = hsl("#78d1ff"),
 	label = hsl("#50acae"),
 	module = hsl("#10B1FE"),

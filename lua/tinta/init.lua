@@ -1,4 +1,5 @@
 local lush = require("lush")
+local hsl = lush.hsl
 local M = {}
 
 local isGui = vim.fn.has("gui_running") == 1
@@ -15,12 +16,6 @@ M.config = defaultConfig
 
 function M.setup(options)
 	M.config = vim.tbl_deep_extend("force", {}, defaultConfig, options or {})
-
-	-- Override pallete before theme loads
-	local pallete = require("highlights.tinta")
-	if M.config.bg_color and M.config.bg_color ~= "" then
-		pallete.bg = M.config.bg_color
-	end
 
 	-- Set Cursor highlight
 	vim.cmd("highlight Cursor guifg=#0f1013 guibg=#10B1FE")
@@ -48,6 +43,25 @@ function M.load()
 				NvimTreeNormalNC({ bg = "NONE" }),
 				BufferInactive({ theme.BufferInactive, bg = "NONE" }),
 				BufferVisible({ theme.BufferCurrent }),
+			}
+		end)
+	end
+
+	if M.config.bg_color and M.config.bg_color ~= "" then
+		local bg = hsl(M.config.bg_color)
+
+		-- Extend the palette as a Lush spec
+		theme = lush.extends({ theme }).with(function()
+			return {
+				Normal({ bg = bg }),
+				NormalFloat({ bg = bg }),
+				NormalSB({ bg = bg }),
+				BufferlineFill({ bg = bg }),
+				TroubleNormal({ bg = bg }),
+				NvimTreeNormal({ bg = bg }),
+				NvimTreeNormalNC({ bg = bg }),
+				BufferInactive({ bg = bg }),
+				BufferVisible({ bg = bg }),
 			}
 		end)
 	end
