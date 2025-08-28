@@ -7,6 +7,7 @@ local defaultConfig = {
 	transparent = false,
 	terminal = isGui,
 	guicursor = true,
+	bg_color = nil,
 	rainbow_headings = false,
 }
 
@@ -41,6 +42,22 @@ function M.load()
 				NvimTreeNormalNC({ bg = "NONE" }),
 				BufferInactive({ theme.BufferInactive, bg = "NONE" }),
 				BufferVisible({ theme.BufferCurrent }),
+			}
+		end)
+	end
+
+	-- Apply user-defined background only if bg_color is not empty
+	if M.config.bg_color ~= "" then
+		theme = lush.extends({ theme }).with(function()
+			return {
+				Normal({ bg = M.config.bg_color }),
+				NormalSB({ bg = M.config.bg_color }),
+				BufferlineFill({ bg = M.config.bg_color }),
+				TroubleNormal({ bg = M.config.bg_color }),
+				NvimTreeNormal({ bg = M.config.bg_color }),
+				NvimTreeNormalNC({ bg = M.config.bg_color }),
+				BufferInactive({ bg = M.config.bg_color }),
+				BufferVisible({ bg = M.config.bg_color }),
 			}
 		end)
 	end
