@@ -3,7 +3,13 @@
 
 `tinta.nvim` is a clean, dark Neovim colorscheme. Designed for focus and readability and minimal color. Comes with built-in support for transparency and aesthetic.
 
-![image](https://github.com/user-attachments/assets/baca70e7-dba2-43ff-8dc2-80e4466dcf33)
+### tinta
+<img width="3840" height="1991" alt="image" src="https://github.com/user-attachments/assets/a18aa95d-14d5-4d26-bd78-86834109fef5" />
+
+
+### tinta-darker
+<img width="3840" height="1991" alt="image" src="https://github.com/user-attachments/assets/31f73118-5c4d-4e51-8ddc-f0f0f911e13e" />
+
 
 ---
 
