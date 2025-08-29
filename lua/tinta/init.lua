@@ -7,7 +7,7 @@ local isGui = vim.fn.has("gui_running") == 1
 local defaultConfig = {
 	transparent = false,
 	terminal = isGui,
-	guicursor = true,
+	guicursor = false,
 	palette = "tinta",
 	rainbow_headings = false,
 }
