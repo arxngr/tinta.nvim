@@ -8,7 +8,7 @@ local defaultConfig = {
 	transparent = false,
 	terminal = isGui,
 	guicursor = true,
-	bg_color = nil,
+	palette = "tinta",
 	rainbow_headings = false,
 }
 
@@ -27,8 +27,9 @@ function M.setup(options)
 end
 
 function M.load()
-	local theme = require("highlights.tinta")
-	vim.g.colors_name = "tinta"
+	local theme_creator = require("highlights.tinta")
+	local theme = theme_creator(M.config.palette) -- Use config palette
+	vim.g.colors_name = M.config.palette == "tinta" and "tinta" or ("tinta-" .. M.config.palette)
 	package.loaded["highlights.tinta"] = nil
 
 	-- transparent
