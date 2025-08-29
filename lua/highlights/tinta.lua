@@ -50,7 +50,7 @@ local function create_theme(palette_name)
 			Whitespace({ fg = t.grey10 }),
 			Comment({ fg = t.comment }),
 			LineNr({ fg = t.comment }), -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-			CursorLineNr({ fg = t.keyword }), -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+			CursorLineNr({ fg = t.type }), -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 			Search({ bg = t.search }),
 			IncSearch({ bg = t.cursor.mix(t.bg, 10), fg = t.property }),
 			CurSearch({ Search }),
