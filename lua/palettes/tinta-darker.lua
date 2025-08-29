@@ -10,7 +10,7 @@ return {
 	keyword = hsl("#bf68d9"),
 	comment = hsl("#636D83"),
 	punctuation = hsl("#CFCED9"),
-	method = hsl("#10B1FE"),
+	method = hsl("#6B9EF0"),
 	type = hsl("#10B1FE"),
 	string = hsl("#56b6c2"),
 	number = hsl("#CB2FE0"),
