@@ -8,7 +8,8 @@
 
 
 ### tinta-darker
-<img width="3840" height="1991" alt="image" src="https://github.com/user-attachments/assets/31f73118-5c4d-4e51-8ddc-f0f0f911e13e" />
+<img width="3840" height="1991" alt="image" src="https://github.com/user-attachments/assets/a8003aec-c66a-4b9e-81e6-cf7455f2f6fc" />
+
 
 
 ---
