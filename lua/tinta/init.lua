@@ -9,6 +9,7 @@ local defaultConfig = {
 	terminal = isGui,
 	guicursor = false,
 	palette = "tinta",
+	bg_color = "",
 	rainbow_headings = false,
 }
 
@@ -33,7 +34,7 @@ function M.load()
 	package.loaded["highlights.tinta"] = nil
 
 	-- transparent
-	if M.config.transparent == true and not isGui then
+	if M.config.transparent == true then
 		theme = lush.extends({ theme }).with(function()
 			return {
 				Normal({ theme.Normal, bg = "NONE" }), -- normal text
