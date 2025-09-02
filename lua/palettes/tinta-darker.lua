@@ -3,8 +3,8 @@ local hsl = lush.hsl
 
 return {
 	-- syntax
-	bg = hsl("#08090A"),
-	bgFloat = hsl("#08090A"),
+	bg = hsl("#1b1d22"),
+	bgFloat = hsl("#1b1d22"),
 	fg = hsl("#8BA3B5"),
 	cursor = hsl("#072952"),
 	keyword = hsl("#0094DE"),
