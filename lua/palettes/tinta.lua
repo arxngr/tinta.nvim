@@ -1,8 +1,6 @@
-local lush = require("lush")
-local hsl = lush.hsl
+local hsl = require("lush").hsl
 
 return {
-	-- syntax
 	bg = hsl("#282829"),
 	bgFloat = hsl("#282829"),
 	fg = hsl("#ABB2BF"),
@@ -21,7 +19,7 @@ return {
 	parameter = hsl("#78d1ff"),
 	label = hsl("#50acae"),
 	module = hsl("#10B1FE"),
-	-- workspace
+
 	primary = hsl("#3691ff"),
 	selection = hsl("#274670"),
 	search = hsl("#1A7247"),
@@ -47,7 +45,6 @@ return {
 	mergeParentLabel = hsl(235, 29, 41),
 	copilot = hsl("#95A922"),
 
-	-- terminal
 	terminalBlack = hsl("#42444d"),
 	terminalRed = hsl("#fc2e51"),
 	terminalGreen = hsl("#25a45c"),
