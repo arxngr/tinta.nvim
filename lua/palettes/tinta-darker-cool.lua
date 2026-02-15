@@ -1,16 +1,16 @@
 local hsl = require("lush").hsl
 
 return {
-	bg = hsl("#020617"),
-	bgFloat = hsl("#0b1220"),
+	bg = hsl("#16181b"),
+	bgFloat = hsl("#1f2227"),
 	fg = hsl("#94a3b8"),
 	cursor = hsl("#1e293b"),
 	keyword = hsl("#1cbad3"),
 	comment = hsl("#64748b"),
 	punctuation = hsl("#38bdf8"),
 	method = hsl("#3b82f6"),
-	type = hsl("#22d3ee"),
-	string = hsl("#93d5dc"),
+	type = hsl("#1cbad3"),
+	string = hsl("#85bec4"),
 	number = hsl("#34d399"),
 	constant = hsl("#818cf8"),
 	tag = hsl("#3b82f6"),
