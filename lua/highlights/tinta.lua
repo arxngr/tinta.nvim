@@ -191,10 +191,10 @@ local function create_theme(palette_name)
 			DiagnosticUnderlineWarn({ gui = "undercurl", sp = t.warning }), -- Used to underline "Warn" diagnostics.
 			DiagnosticUnderlineInfo({ gui = "undercurl", sp = t.info }), -- Used to underline "Info" diagnostics.
 			DiagnosticUnderlineHint({ gui = "undercurl", sp = t.hint }), -- Used to underline "Hint" diagnostics.
-			-- DiagnosticFloatingError    { } , -- Used to color "Error" diagnostic messages in diagnostics float. See |vim.diagnostic.open_float()|
-			-- DiagnosticFloatingWarn     { } , -- Used to color "Warn" diagnostic messages in diagnostics float.
-			-- DiagnosticFloatingInfo     { } , -- Used to color "Info" diagnostic messages in diagnostics float.
-			-- DiagnosticFloatingHint     { } , -- Used to color "Hint" diagnostic messages in diagnostics float.
+			DiagnosticFloatingError({ NormalFloat, fg = t.error }), -- Used to color "Error" diagnostic messages in diagnostics float.
+			DiagnosticFloatingWarn({ NormalFloat, fg = t.warning }), -- Used to color "Warn" diagnostic messages in diagnostics float.
+			DiagnosticFloatingInfo({ NormalFloat, fg = t.info }), -- Used to color "Info" diagnostic messages in diagnostics float.
+			DiagnosticFloatingHint({ NormalFloat, fg = t.hint }), -- Used to color "Hint" diagnostic messages in diagnostics float.
 			-- DiagnosticSignError        { } , -- Used for "Error" signs in sign column.
 			-- DiagnosticSignWarn         { } , -- Used for "Warn" signs in sign column.
 			-- DiagnosticSignInfo         { } , -- Used for "Info" signs in sign column.
@@ -752,6 +752,7 @@ local function create_theme(palette_name)
 			WhichKeyGroup({ Tag }),
 			WhichKeySeparator({ Operator }),
 			WhichKeyDesc({ sym("@text.title") }),
+			WhichKeyFloat({ bg = t.bg }),
 			-- WhichKeyFloat {},
 			-- WhichKeyBorder {},
 			-- WhichKeyValue { Character },
@@ -803,6 +804,9 @@ local function create_theme(palette_name)
 			-- nvim tree
 			NvimTreeNormal({ bg = t.bgFloat }),
 			NvimTreeNormalNC({ bg = t.bgFloat }),
+			-- oil
+			OilNormal({ bg = t.bg }),
+			OilNormalNC({ bg = t.bg }),
 			NvimTreeWindowPicker({ fg = t.fg, bg = t.selection, gui = "bold" }),
 			NvimTreeIndentMarker({ fg = t.punctuation }),
 			NvimTreeRootFolder({ fg = t.tag }),
